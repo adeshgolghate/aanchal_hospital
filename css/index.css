@@ -1,0 +1,387 @@
+@charset "utf-8";
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+@font-face{
+	font-family: Gotu;
+	src :url(../font/Gotu-Regular.ttf);
+}
+@font-face{
+	font-family: Muli;
+	src:url(../font/Muli-VariableFont_wght.ttf);
+}
+
+@keyframes slideshow {
+  10% {left: 0;}
+  20% {left: 0;}
+  30% {left: -100%;}
+  40% {left: -100%;}
+  50% {left: -200%;}
+  60% {left: -200%;}
+  70% {left: -300%;}
+  80% {left: -300%;}
+  90% {left: -400%;}
+  100% {left: -400%}
+}
+
+
+#slider{overflow:hidden;auto; border: 5px solid transparent;border-radius: 0px;}
+#slider figure img{width:20%;float:left;}
+#slider figure{position:relative;width:500%;text-align:left;animation:20s slideshow infinite}
+@media screen and (max-width: 767px) {#slider {overflow: hidden; width: 100%; margin: 0 auto;}}
+
+body{
+	width: 100%;
+	height: 100%;
+	font-family: Gotu;
+}
+
+.w-80{
+	width: 80%;
+	height: auto;
+	margin: auto;
+	padding: 10px 10px;
+}
+/* Start Header Coding */
+
+header{
+	width: 100%;
+	height: 55px;
+	background: 	#b3b3ff;
+	float: left;
+	position: fixed;
+	overflow: hidden;
+	
+
+
+}
+
+header .menu{
+	width: 80%;
+	height: 55px;
+	margin: auto;
+	padding: 0 10px;
+	
+
+}
+
+header .menu .brand-name{
+	width: 35%;
+	float: left;
+	
+}
+header .menu .brand-name a{
+	text-decoration: none;
+	
+}
+header .menu .brand-name h2{
+	font-family: Gotu;
+	font-size: 35px;
+	color: white;
+	
+}
+/* start nav ul li coding */
+header .menu nav{
+	width: 65%;
+	float: left;
+	
+}
+
+header .menu nav ul{
+	list-style: none;
+
+	
+}
+
+header .menu nav ul li{
+	display: inline-block;
+	margin: 8px 10px;
+	padding: 2px 10px;
+	
+}
+
+header .menu nav ul li:hover{
+	border:none;
+	border-bottom: 3px solid red;
+	
+
+}
+
+
+header .menu nav ul li:hover a{
+	color: #00bcd4;
+
+	
+}
+
+header .menu nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-family: Gotu;
+	font-size: 22px;
+	font-weight: bold;
+	
+}
+
+
+
+/* End Header Coding */
+
+/* Start custom scrollbar coding*/
+.icon{
+
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 50%;
+	opacity: 1.0;
+	margin-right: 80px;
+	
+
+}
+.icon:hover {
+  opacity: 0.5;
+}
+
+.border{
+	width: 100%;
+	height:100%;
+	padding: 50px,50px.50px,50px;
+
+	border-style: solid;
+	border-color: #ff66b3;
+	background-color: #e6b3cc;
+}
+
+.icon1{
+
+	border-color:#ff66ff ;
+	border-width: 4px;
+	border-style: solid;
+	border-radius: 20%;
+	opacity: 1.0;
+	margin-right: 80px;
+	
+
+}
+.icon1:hover {
+  opacity: 0.5;
+}
+
+body::-webkit-scrollbar{
+	width: 8px;
+	background: black;
+}
+
+body::-webkit-scrollbar-thumb{
+	background: yellow;
+}
+
+/* End custom scrollbar coding*/
+/* Start Section Coding */
+
+section{
+	width: 100%;
+	float: left;
+}
+section .section-img{
+	width: 100%;
+	height: 480px;
+	background: url(../images/1.jpg) no-repeat;
+
+    background-size: cover;
+}
+section .section-imgh{
+	width: 100%;
+	height: 480px;
+	background: url(../images/hepatology.jpg) no-repeat;
+    background-size: cover;
+    }
+section .section-bg-box{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	text-align: center;
+	padding: 150px 0;
+}
+section .section-bg-box h1{
+
+	background-color: #ccccff;
+	color: #d61c0f;
+	font-size: 50px;
+	
+}
+
+section .section-bg-box h2{
+	
+	color: #d61c0f;
+	background-color:  #ccccff;
+	
+	font-size: 20px;
+}
+section .welcome-text{
+	margin:0;
+	font-size: 35px;
+    text-transform: uppercase;
+    
+    width: 60%;
+   	padding: auto;
+    color: black;
+
+}
+section p{
+	font-size: 22px;
+	text-align: justify;
+}
+section ul{
+	padding: 0;
+	margin-left:10px;
+	margin-top: 20px;
+	list-style: none;
+}
+section ul li{
+	font-size: 20px;
+	line-height: 30px;
+}
+section h2{
+	font-size: 30px;
+}
+section .about-box{
+	width: 100%;
+}
+section .about-box p{
+	font-size: 18px;
+}
+section .about-box div:nth-child(1){
+	width: 60%;
+	float: left;
+	padding: 10px;
+}
+section .about-box div:nth-child(2){
+	width: 40%;
+	float: left;
+	padding: 10px;
+}
+/* gallery Coding */
+section .form-box{
+	padding: 20px;
+
+
+
+}
+section .form-box .gallery{
+	width: 100%;
+	height: 200px;
+	padding: 0 5px;
+
+
+
+
+
+}
+section .form-box .gallery div{
+  width: 25%;
+  height: 100%;
+  float: left;
+  padding: 5px;
+
+}
+section .form-box .gallery div img{
+	border-radius: 10px;
+
+}
+section .form-box form{
+	margin-top: 20px;
+}
+section .form-box input:focus,textarea:focus,button:focus{
+	outline: none;
+}
+section .form-box input,textarea{
+	width: 50%;
+	height: 35px;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	padding: 0 10px;
+	font-family: Gotu;
+	font-size: 16px;
+}
+textarea{
+	height: 100px;
+}
+section .form-box form #register-btn,#login-btn,#contact-btn,#appointment-btn,#apply-btn{
+	font-family: Muli;
+	font-size: 20px;
+	color: white;
+	padding: 10px;
+	border:none;
+	cursor: pointer;
+	border-radius: 3px;
+}
+section .form-box form #login-btn{
+	background: red;
+}
+section .form-box form #contact-btn{
+	background: blue;
+}
+section .form-box form #apply-btn{
+	background: blue;
+}
+section .form-box form #register-btn{
+	background: #007bff;
+}
+section .form-box form #appointment-btn{
+	background-color:blue;
+}
+section .form-box form #contact-btn:hover{
+	background: #080896;
+}
+
+section .form-box form #apply-btn:hover{
+	background: #080896;
+}
+section .form-box form #login-btn:hover{
+	background: #9E0707;
+}
+section .form-box form #register-btn:hover{
+	background: blue;
+}
+section .form-box form #appointment-btn:hover{
+	background: blue;
+}
+
+
+
+/* End Section Coding */
+/* Start Footer Coding */
+
+footer{
+	width: 100%;
+	background: 	#ecb3ff;
+	float: left;
+	color: black;
+	padding: 30px 0;
+
+}
+
+footer .footer-box{
+	width: 25%;
+	float: left;
+	height: 100%;
+}
+
+footer .footer-box a{
+	display: block;
+	font-family: Gotu;
+	color: black;
+	font-size: 20px;
+	text-transform: capitalize;
+}
+footer .footer-box a:hover{
+	text-decoration: none;
+	color: red;
+}
+
+
+/* End Footer Coding */
